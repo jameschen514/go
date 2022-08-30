@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html>
+<body>
+    <div>{{ .Heading.FirstName }}</div>
+    <div>{{ .Heading.LastName }}</div>
+    <ul>
+        {{ range .NewsFeed  }}
+        <li>{{ .Title }}</li>
+        <li>{{ .Text }}</li>
+        {{ end }}
+    </ul>
+</body>
+</html>
